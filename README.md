@@ -3,7 +3,7 @@ A mobile responsive CRM solution for businesses who want to boost sales by conce
 
 ### Live Demo
 
-Link: http://crm.ericmichaellowry.com
+Link: http://crm.yizhou-liu.com
 
 username: ourguy@lfz.com<br>
 password: password
