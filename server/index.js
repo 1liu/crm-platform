@@ -392,7 +392,7 @@ app.get('/api/dashboard/:userId', (req, res, next) => {
           join "customers" as "c" using ("customerId")
          inner join "users" as "u"
             on "t"."ownerId" = "u"."userId"
-        where "t"."ownerId" = $1
+        where "t"."assignedToId" = $1
         order by "t"."dueDate"
         limit 5;
       `;
