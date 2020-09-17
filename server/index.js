@@ -183,7 +183,7 @@ app.get('/api/tickets/:userId', (req, res, next) => {
           join "customers" as "c" using ("customerId")
          inner join "users" as "u"
             on "t"."ownerId" = "u"."userId"
-        where "t"."ownerId" = $1
+        where "t"."assignedToId" = $1
         order by "t"."ticketId"
       `;
   const params = [userId];
